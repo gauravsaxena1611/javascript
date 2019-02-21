@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Custom Object Creation Using Singleton Object</title>
+	<script>
+	var blogpost = new function(){
+		//object vlues
+		this.title = "JAVA";
+		this.text = "Is an object oriented language";
+		//object function
+		this.displayDetails = function(){
+			document.write(this.title);
+			document.write(this.text);
+		}
+	}
+
+	blogpost.displayDetails()
+	</script>
+</head>
+
+<body>
+
+	
+</body>
+
+</html>

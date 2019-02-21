@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Plus and Strings</title>
+	<script>
+		var x = "10";
+		var y = "20";
+
+		document.write("Addition :" + (x+y));
+		document.write("<br/>");
+		document.write("Subtraction :" + (x-y));
+		document.write("<br/>");
+		document.write("Division is: "+(x/y));
+		document.write("<br/>");
+
+		// All worked, this is because JS converts strings to number based on arithmetic operations.
+
+		var z = "Gaurav"
+		document.write("<br/>");
+		document.write("Addition :" + (x+z));
+		document.write("<br/>");
+		document.write("Subtraction :" + (x-z));
+
+		//This time JS throws NAN (Not a number), this is because it cannot convert Gaurav to a number.
+	
+	</script>
+</head>
+
+
+</html>

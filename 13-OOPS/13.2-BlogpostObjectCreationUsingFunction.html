@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Custom Object Creation Using Function</title>
+	<script>
+	
+	//function that assigns values to the object
+	//here function is used as a CONSTRUCTOR to create an object
+	function blogpost(title,text){
+		this.title = title;
+		this.text = text;
+		//we have used function here to assign a valuse dynamically to objects
+		//that is we have created a function and assign to an object
+		this.addCategory = addCategory;
+		this.displayBlogPost = displayBlogPost;
+
+	}
+
+	function addCategory(category){
+		this.category = category;
+	}
+
+	function displayBlogPost(){
+		document.write(this.title+"<br/>");
+		document.write(this.text+"<br/>");
+		document.write(this.category+"<br/>");
+
+	}
+
+	//First object is created using blogpost function
+	var bp1 = new blogpost("JQuery","Makes JS easier to use");
+	bp1.addCategory("UI Technology");
+	bp1.displayBlogPost();
+	
+	//Second object is created using blogpost function
+	var bp2 = new blogpost("AngularJS","To Build Single Page Apps!!");
+	bp2.addCategory("Advanced UI Technology");
+	bp2.displayBlogPost();
+
+	</script>
+</head>
+
+<body>
+
+	
+</body>
+
+</html>
